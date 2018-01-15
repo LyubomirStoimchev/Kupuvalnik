@@ -1,0 +1,87 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Kupuvalnik.master.cs" Inherits="KupuvalnikWeb.Kupuvalnik" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Kupuvalnik</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"></script>
+    <link href="css/sb-admin.css" rel="stylesheet"/>
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <form id="masterForm" runat="server">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Kupuvalnik</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active" runat="server">
+                            <a class="nav-link" href="/Welcome.aspx">Home</a>
+                        </li>
+                        <li class="nav-item active" runat="server">
+                            <a class="nav-link" href="/Store.aspx">Store</a>                         
+                        </li>
+                        <li class="nav-item active" id="liAdminPanel" runat="server">
+                            <a class="nav-link" href="/AdminPanel.aspx">Admin Panel</a>
+                        </li>
+                        <li class="nav-item active" id="liAdminLogin" runat="server">
+                            <a class="nav-link" href="/AdminLogin.aspx">Admin Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <asp:LinkButton ID="btnSignOut" CssClass="btn btn-warning" runat="server" OnClick="LogoutClick">Sign Out</asp:LinkButton>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Page Content -->
+        <div class="container">
+
+            <!-- Jumbotron Header -->
+            <header class="jumbotron my-4" style="background-color: #e9ecef4d;">
+
+                <asp:ContentPlaceHolder ID="body" runat="server">
+                </asp:ContentPlaceHolder>
+
+            </header>
+        </div>
+        <!-- /.container -->
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <!-- Footer -->
+        <footer class="py-5 bg-dark">
+            <div class="container">
+                <p class="m-0 text-center text-white">Copyright &copy; Kupuvalnik 2017</p>
+            </div>
+        </footer>
+    </form>
+</body>
+
+</html>
+

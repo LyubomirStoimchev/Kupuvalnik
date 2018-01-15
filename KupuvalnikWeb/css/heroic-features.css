@@ -1,0 +1,30 @@
+/*!
+ * Start Bootstrap - Heroic Features (https://startbootstrap.com/template-overviews/heroic-features)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-heroic-features/blob/master/LICENSE)
+ */
+
+body {
+    padding-top: 54px;
+    padding-bottom: 150px;
+}
+
+@media (min-width: 992px) {
+    body {
+        padding-top: 56px;
+        padding-bottom: 100px;
+    }
+}
+
+.footer {
+    position: relative;
+    margin-top: -150px; /* negative value of footer height */
+    height: 150px;
+    clear: both;
+    padding-top: 20px;
+}
+
+.card {
+    height: 100%;
+}
+
